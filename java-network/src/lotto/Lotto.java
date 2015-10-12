@@ -39,13 +39,19 @@ public class Lotto {
 		System.out.println("********부자되세요********");
 
 		for (int i = 0; i < lottos.length; i++) {
-			this.sort(lottos[i]);
-			for (int j = 0; j < lottos[0].length; j++) {
-				System.out.print(lottos[i][j]+"\t");				
+			if (i==0) {
+				System.out.print((i+1)+"회차\n");}
+			if (i!=0&&i%5==0) {
+				System.out.print((i/5+1)+"회차\n");
 			}
+			
+			this.sort(lottos[i]);
+			for (int j = 0; j < lottos[i].length; j++) {
+				System.out.print(lottos[i][j]+"\t");	
+				}
+			
 			System.out.println();
 		}
-		
 	}
 	private int vote(){
 		

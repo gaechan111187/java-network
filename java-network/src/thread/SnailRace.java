@@ -11,17 +11,17 @@ public class SnailRace {
 		Snail s3 = new Snail("준규");
 		Snail s4 = new Snail("혜숙");
 		
-//		s1.setPriority(10);
-//		s2.setPriority(3);
-//		s3.setPriority(2);
-//		s4.setPriority(1);
-//		for (int i = 5; i > 0; i--) {
-//			System.out.println(i+"초");
-//			Thread.sleep(1000);
-//			}
-//			System.out.println("경주 시작!!!!!!+\n");
-//			
-//		
+		s1.setPriority(10);
+		s2.setPriority(3);
+		s3.setPriority(2);
+		s4.setPriority(1);
+		for (int i = 5; i > 0; i--) {
+			System.out.println(i+"초");
+			Thread.sleep(1000);
+			}
+			System.out.println("경주 시작!!!!!!+\n");
+			
+		
 		
 		s1.start();
 		s2.start();

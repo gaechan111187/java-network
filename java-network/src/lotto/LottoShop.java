@@ -1,4 +1,7 @@
 package lotto;
+
+import java.util.Scanner;
+
 /**
  * @file_name : LottoShop.java 
  * @author    : chanhok61@daum.net
@@ -8,8 +11,10 @@ package lotto;
 public class LottoShop {
 	public static void main(String[] args) {
 		System.out.println("행운의 로또");
+		Scanner scanner = new Scanner(System.in);
 		Lotto lotto = new Lotto();
-		lotto.inputMoney(5000);
+		System.out.println("금액입력");
+		lotto.inputMoney(scanner.nextInt());
 		lotto.extractNum();
 		lotto.printLotto();
 	}
